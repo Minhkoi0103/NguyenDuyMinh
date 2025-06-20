@@ -1,0 +1,407 @@
+.main-content{
+   background: #3F5EFB;
+  background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+ }
+ .info-name{
+  margin: 0;
+  padding: 0;
+
+}
+.pp{
+  display: flex;
+}
+
+  .avatar{
+    box-shadow: 0 0 200px rgb(255, 255, 255);
+    margin: 70px 150px;
+    margin-right: 40px;;
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%;
+  }
+  .avatar {
+
+     border: 5px solid #00ffff;   /* Viền màu cyan */
+  object-fit: cover;
+  border-radius: 50%; /* bo tròn */
+  box-shadow: 0 0 20px #00ffff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 100px #00ffff;
+  }
+  to {
+    box-shadow: 0 0 300px #00ffff, 0 0 600px #00ffff;
+  }
+}
+
+.text-info{
+  margin-top:70px ;
+}
+.text-info h2{
+  color: rgb(8, 0, 255);
+  font-size: 40px;
+}
+.tetx{
+  color:#bdc3c7;
+   width: 700px;
+font-family:Poppins;
+font-size:17.6px;
+line-height:28.16px;
+margin:17.6px 0px 30px;
+text-align:left;
+}
+
+
+
+.profile-frame {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 150px 20px auto;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.profile-frame h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.text-profi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.text-profi ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    min-width: 250px;
+}
+
+.text-profi li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #fff;
+    font-size: 1.1rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.text-profi li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.text-profi li:last-child {
+    margin-bottom: 0;
+}
+
+.avata {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.avata:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-frame {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .text-profi {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .avata {
+        width: 120px;
+        height: 120px;
+        order: -1;
+    }
+    
+    .profile-frame h1 {
+        font-size: 1.5rem;
+    }
+    
+    .text-profi li {
+        font-size: 1rem;
+    }
+}
+
+.dream {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 80px;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 40px yellow;
+}
+
+.dream::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: float 6s ease-in-out infinite;
+}
+
+.dream h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.dream h2::after {
+    content: '✨';
+    margin-left: 10px;
+    animation: sparkle 2s ease-in-out infinite alternate;
+}
+
+.dream p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.dream p:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+@keyframes sparkle {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dream {
+        padding: 20px;
+        margin: 10px;
+        max-width: 100%;
+    }
+    
+    .dream h2 {
+        font-size: 1.5rem;
+    }
+    
+    .dream p {
+        font-size: 1rem;
+        padding: 15px;
+        text-align: left;
+    }
+}
+
+.education {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    margin: 30px 70px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.education::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.education h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.education h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.education .school {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .education {
+        padding: 25px;
+        margin: 20px 0;
+    }
+    
+    .education h2 {
+        font-size: 2em;
+    }
+    
+    .education .school {
+        font-size: 1em;
+    }
+}
+
+/* HOBBIES SECTION */
+.hobbies {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    border-radius: 24px;
+    padding: 36px 40px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 32px #fda08533;
+    color: #222;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1.2s;
+}
+.hobbies h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 28px;
+    text-align: center;
+    color: #ff6b6b;
+    letter-spacing: 1px;
+}
+.hobbies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+}
+.hobby-item {
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    box-shadow: 0 4px 18px #fda08522;
+    padding: 28px 22px;
+    flex: 1 1 240px;
+    min-width: 220px;
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 0;
+}
+.hobby-item:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px #fda08544;
+}
+.hobby-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+.hobby-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f76b1c;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.hobby-item p {
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+    margin: 0;
+}
+@media (max-width: 900px) {
+    .hobbies {
+        padding: 18px 6px;
+        margin: 18px 6px;
+        max-width: 98vw;
+    }
+    .hobbies-grid {
+        gap: 16px;
+    }
+    .hobby-item {
+        min-width: 140px;
+        max-width: 100%;
+        padding: 18px 8px;
+    }
+    .hobbies h2 {
+        font-size: 1.3rem;
+    }
+}
