@@ -112,12 +112,14 @@
 
 
 footer {
+  display: flex;
   color:#bdc3c7;
 font-family:Poppins;
 font-size:14.4px;
 line-height:23.04px;
 margin:14.4px 0px;
-text-align:center;
+justify-content: space-between;
+margin: 0 400px 0 400px;
 }
 /* From Uiverse.io by Mohammad-Rahme-576 */ 
 /* Container Styles */
@@ -130,7 +132,7 @@ text-align:center;
 
 /* Button Styles */
 .button-content {
-  display: flex;
+  display: fstify-items: center;lex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #6e8efb, #a777e3);
