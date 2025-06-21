@@ -117,7 +117,6 @@ footer {
 font-family:Poppins;
 font-size:14.4px;
 line-height:23.04px;
-margin:14.4px 0px;
 justify-content: space-between;
 margin: 0 400px 0 400px;
 }
@@ -132,7 +131,7 @@ margin: 0 400px 0 400px;
 
 /* Button Styles */
 .button-content {
-  display: fstify-items: center;lex;
+  display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #6e8efb, #a777e3);
