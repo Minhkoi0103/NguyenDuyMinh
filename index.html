@@ -1,163 +1,637 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Duy Minh - CV</title>
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/base.css">
+    <title>Nguyễn Duy Minh - Portfolio</title>
+    <meta name="description" content="Portfolio cá nhân của Nguyễn Duy Minh - sinh viên Công nghệ Thông tin tại Đại học Giao thông Vận tải TP.HCM. Đam mê lập trình và phát triển ứng dụng web.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="bg"></div>
-    <header>
-        <nav class="nav" role="navigation">
-            <p id="name">Duy Minh</p>
-            <ul>
-                 <li><a href="index.html" class="nav-link" data-section="profile-frame">About</a></li>
-                <li><a href="skills.html" class="nav-link" data-section="skills">Skills</a></li>
-                <li><a href="project.html" class="nav-link" data-section="projects">Projects</a></li>
-                <div class="tooltip-container">
-  <div class="button-content">
-    <span class="text">Contact</span>
- 
-      <path
-        d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92zM18 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM6 13c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 7.02c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"
-      ></path>
-    </svg>
-  </div>
-  <div class="tooltip-content">
-    <div class="social-icons">
-    <a href="https://github.com/Minhkoi0103" class="social-icon github">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path
-        d="M12 2C6.477 2 2 6.484 2 12.021c0 4.426 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .268.18.579.688.481C19.138 20.197 22 16.444 22 12.021 22 6.484 17.523 2 12 2z"
-        ></path>
-      </svg>
-    </a>
-      </a>
-      <a href="https://www.facebook.com/nguyenduyminh2005/" class="social-icon facebook">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-        >
-          <path
-            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-          ></path>
-        </svg>
-      </a>
-      <a href="https://www.linkedin.com/in/minhkoi2503" class="social-icon linkedin">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-        >
-          <path
-            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-          ></path>
-        </svg>
-      </a>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>Đang tải...</p>
+        </div>
     </div>
-  </div>
-</div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Portfolio</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Trang chủ</a></li>
+                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#hobbies" class="nav-link">Sở thích</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                <li><a href="#education" class="nav-link">Học vấn</a></li>
+                <li><a href="#portfolio" class="nav-link">Dự án</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
             </ul>
-        </nav>
-    </header>
-    <main class="main-content" role="main">
-        <div class="space"></div>
-        <section class="info-name">
-            <div class="space"></div>
-            <div class="pp">
-                <img class="avatar" src="./images/logo.png" alt="Logo">
-                <div class="text-info">
-                    <b class="rainbow-text">Nguyễn Duy Minh</b>
-                    <br><br>
-                    <h2>I'm a <span class="lightning-text">Information Technology student</span></h2>
-                    <p class="tetx">
-                        Sinh viên năm 2 ngành Công nghệ thông tin, yêu thích lập trình và phát triển web. Tôi luôn tìm kiếm cơ hội để học hỏi, sáng tạo và tham gia các dự án thực tế nhằm phát triển kỹ năng chuyên môn.
-                    </p>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="floating-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+            <div class="floating-element element-4"></div>
+        </div>
+        
+        <div class="hero-content">
+            
+            <h1 class="hero-title">
+                Xin chào, tôi là
+                <span class="typed-text" id="typed-text"></span>
+                <span class="cursor" id="cursor">|</span>
+            </h1>
+            
+            <p class="hero-subtitle">Sinh viên Công nghệ Thông tin - Đại học Giao thông Vận tải TP.HCM</p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('about')">
+                    Xem Portfolio
+                </button>
+                <button class="btn btn-secondary" onclick="downloadCV()">
+                    Tải CV
+                </button>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/Minhkoi0103" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/minhkoi2503/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/nguyenduyminh2005/" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:nguyenduyminhnt2503@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Giới thiệu <span class="gradient-text">về tôi</span></h2>
+                <p>Tìm hiểu thêm về hành trình và đam mê của tôi</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="/images/avatar.png" class="avt">
+                    </div>
+                    <div class="code-badge">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h3>Thông tin <span class="gradient-text">cá nhân</span></h3>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span><strong>Ngày sinh:</strong> 25/03/2005</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>Quê quán:</strong> Tỉnh Bến Tre</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-home"></i>
+                            <span><strong>Nơi ở:</strong> 17/4, Tô Ký, Quận 12, TP.HCM</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span><strong>Điện thoại:</strong> 0337919597</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><strong>Email:</strong> nguyenduyminhnt2503@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span><strong>Trường:</strong> Đại học Giao thông Vận tải TP.HCM</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span><strong>Chuyên ngành:</strong> Công nghệ Thông tin</span>
+                        </div>
+                    </div>
+                    <p>Tôi là sinh viên năm hai chuyên ngành Công nghệ Thông tin tại Đại học Giao thông Vận tải TP.HCM. Với niềm đam mê về lập trình và công nghệ, tôi luôn học hỏi và cập nhật những kiến thức mới để phát triển kỹ năng trong lĩnh vực phát triển web và ứng dụng.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">2023</div>
+                            <div class="stat-label">Năm nhập học</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">20</div>
+                            <div class="stat-label">Tuổi</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <div class="space"></div>
-        <section class="profile-frame" id="about">
-          
-           <div class="left">
-            <h1>Thông tin cá nhân</h1>
-            <div class="text-profi">
-                <ul>
-                    <li>Họ và tên: Nguyễn Duy Minh</li>
-                    <li>Ngày sinh: 25/03/2005</li>
-                    <li>Địa chỉ: 17/4, Tô Ký, quận 12, TP.HCM</li>
-                </ul>
-                <img class="avata" src="./images/avatar.png" alt="Avatar">
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sở thích <span class="gradient-text">cá nhân</span></h2>
+                <p>Những hoạt động tôi đam mê trong thời gian rảnh</p>
             </div>
-        </section>
-        <div class="space"></div>
-        
-        <div class="dream">
-            <h2>Giấc mơ của tôi</h2>
-            <p>
-            Tôi mơ ước trở thành một lập trình viên giỏi, có thể tạo ra những sản phẩm công nghệ hữu ích cho cộng đồng. Tôi muốn tham gia vào các dự án lớn, học hỏi từ những người đi trước và đóng góp cho sự phát triển của ngành công nghệ thông tin.
-            </p>
-        </div>
-        <div class="space"></div>
-        <div class="education">
-            <h2>Học tập</h2>
-            <p class="school">
-            Tôi hiện đang theo học tại Trường Đại học Giao thông vân tải TP. Hồ Chí Minh, chuyên ngành Công nghệ Thông tin. Tôi đã hoàn thành các khóa học cơ bản về lập trình, cơ sở dữ liệu và phát triển web. Tôi luôn cố gắng nâng cao kiến thức và kỹ năng của mình thông qua việc tham gia các khóa học trực tuyến và thực hành trên các dự án cá nhân.
-            </p>
-        </div>
-        <div class="space"></div>
-        <div class="hobbies">
-            <h2>Sở thích</h2>
+            
             <div class="hobbies-grid">
-            <div class="hobby-item">
-                <span class="hobby-icon">💻</span>
-                <h3>Lập trình</h3>
-                <p>Yêu thích khám phá các ngôn ngữ lập trình mới và xây dựng các ứng dụng web hiện đại</p>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Nhiếp ảnh</h3>
+                    <p>Chụp ảnh phong cảnh, street photography và portrait. Tôi thích ghi lại những khoảnh khắc đẹp trong cuộc sống.</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Âm nhạc</h3>
+                    <p>Nghe và sáng tác nhạc điện tử. Tôi thích khám phá các thể loại nhạc mới và tạo ra những giai điệu riêng.</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Du lịch</h3>
+                    <p>Khám phá những vùng đất mới, trải nghiệm văn hóa địa phương và tìm hiểu về lịch sử các nền văn minh.</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Đọc sách</h3>
+                    <p>Đam mê với sách về công nghệ, tâm lý học và triết học. Luôn học hỏi để phát triển bản thân mỗi ngày.</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming</h3>
+                    <p>Chơi game chiến thuật và puzzle games. Tôi thích những trò chơi thử thách tư duy và kỹ năng giải quyết vấn đề.</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Thể thao</h3>
+                    <p>Tập gym và chạy bộ để giữ gìn sức khỏe. Thể thao giúp tôi duy trì năng lượng và tinh thần tích cực.</p>
+                </div>
             </div>
-            <div class="hobby-item">
-                <span class="hobby-icon">📚</span>
-                <h3>Đọc sách</h3>
-                <p>Đặc biệt thích đọc sách về công nghệ, phát triển bản thân và tiểu thuyết khoa học viễn tưởng</p>
-            </div>
-            <div class="hobby-item">
-                <span class="hobby-icon">🎮</span>
-                <h3>Gaming</h3>
-                <p>Chơi game strategy và RPG để thư giãn, đồng thời học hỏi về game design và mechanics</p>
-            </div>
-            <div class="hobby-item">
-                <span class="hobby-icon">🎵</span>
-                <h3>Nghe nhạc</h3>
-                <p>Yêu thích nhiều thể loại từ Lo-fi, Electronic đến Rock, giúp tăng cường sự tập trung khi code</p>
-            </div>
-            <div class="hobby-item">
-                <span class="hobby-icon">🌐</span>
-                <h3>Khám phá Tech</h3>
-                <p>Theo dõi xu hướng công nghệ mới, AI, blockchain và các breakthrough trong ngành IT</p>
-            </div>
-            <div class="hobby-item">
-                <span class="hobby-icon">⚽</span>
-                <h3>Thể thao</h3>
-                <p>Chơi bóng đá, cầu lông và tập gym để duy trì sức khỏe và cân bằng cuộc sống</p>
-            </div>
-            </div>
-           
         </div>
-        <div class="space"></div>
-    </main>
-    <footer>
-       <p>Mail: nguyenduyminhnt25032005@gmail.com</p>
-        <p>Phone: 0377917980</p>
-        <p>© 2025 Nguyễn Duy Minh</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kỹ năng <span class="gradient-text">chuyên môn</span></h2>
+                <p>Những công nghệ và kỹ năng tôi thành thạo</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>JavaScript / TypeScript</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>HTML / CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Node.js / Express</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Python / Django</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Database (SQL/NoSQL)</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Design & Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>UI/UX Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Figma / Adobe XD</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Git / GitHub</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Docker / AWS</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Mobile Development</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Học vấn & <span class="gradient-text">Chứng chỉ</span></h2>
+                <p>Quá trình học tập và phát triển bản thân</p>
+            </div>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Sinh viên Công nghệ Thông tin</h3>
+                        <h4>Trường đại học Giao Thông Vận Tải</h4>
+                        <p class="education-period">2023-2025</p>
+                        <p>Sinh viên năm hai đại học chuyên nghành công nghệ thông tin với nhiều thành tích học tập tốt.</p>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>AWS Certified Developer</h3>
+                        <h4>Amazon Web Services</h4>
+                        <p class="education-period">2022</p>
+                        <p>Chứng chỉ phát triển ứng dụng trên nền tảng AWS. Thành thạo các dịch vụ cloud computing và deployment.</p>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Google UX Design Certificate</h3>
+                        <h4>Google / Coursera</h4>
+                        <p class="education-period">2021</p>
+                        <p>Chương trình đào tạo toàn diện về UX Design. Nắm vững quy trình thiết kế từ research đến prototype.</p>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>React Advanced Patterns</h3>
+                        <h4>Meta / Facebook</h4>
+                        <p class="education-period">2023</p>
+                        <p>Khóa học chuyên sâu về React patterns và best practices. Performance optimization và modern React ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dự án <span class="gradient-text">nổi bật</span></h2>
+                <p>Những sản phẩm tôi đã tạo ra</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Snake Icon">
+                          <path d="M24 44c-7 0-12-5-12-12 0-5 4-9 9-9h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-8c-4.4 0-8-3.6-8-8s3.6-8 8-8c3.9 0 7.1 2.5 7.9 6.1.3 1.2-1.5 1.7-1.9.5C27.1 5.7 25.7 4 24 4c-3.3 0-6 2.7-6 6s2.7 6 6 6h8c4.4 0 8 3.6 8 8s-3.6 8-8 8h-6c-2.2 0-4 1.8-4 4 0 2.2 1.8 4 4 4 3.9 0 7.1-2.5 7.9-6.1.3-1.2 2.1-.7 1.9.5C40.3 42.3 32.7 44 24 44z" fill="#fff"/>
+                          <circle cx="32" cy="12" r="2" fill="#fff"/>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-sm"><a href="https://minhkoi0103.github.io/snaketr/">Xem</a></button>
+                            
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Snake Extreme</h3>
+                        <p>Trò chơi rắn săn mòi trực tuyến với nhiều chế độ chơi</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-wallet"></i>
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-sm"><a href="https://github.com/Minhkoi0103/newExpenseManagerjava">Xem</a></button>
+                            
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Expense Management App</h3>
+                        <p>Ứng dụng quản lý chi tiêu với giao diện trực quan.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JavaFX</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-user"></i>
+                        <div class="portfolio-overlay">
+                             <button class="btn btn-sm"><a href="https://minhkoi0103.github.io/NguyenDuyMinh/">Xem</a></button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Profolio</h3>
+                        <p>Trang web giới thiệu bản thân</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="portfolio-overlay">
+                             <button class="btn btn-sm">Xem</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Mobile Banking App</h3>
+                        <p>Ứng dụng banking mobile với bảo mật cao.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-users"></i>
+                        <div class="portfolio-overlay">
+                            <button class="btn btn-sm">Xem</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Social Media Platform</h3>
+                        <p>Nền tảng mạng xã hội với tính năng stories, live streaming.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-book-open"></i>
+                        <div class="portfolio-overlay">
+                             <button class="btn btn-sm">Xem</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Learning Management System</h3>
+                        <p>Hệ thống quản lý học tập trực tuyến.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="floating-elements">
+            <div class="floating-element contact-element-1"></div>
+            <div class="floating-element contact-element-2"></div>
+            <div class="floating-element contact-element-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2>Liên hệ với tôi</h2>
+                <p>Hãy cùng tạo nên điều gì đó tuyệt vời</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Thông tin liên hệ</h3>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>nguyenduyminhnt2503@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Điện thoại</h4>
+                                <p>0337919597</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Địa chỉ</h4>
+                                <p>17/4, Tô Ký, Quận 12, TP.HCM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Theo dõi tôi</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Minhkoi0103" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/minhkoi2503/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/nguyenduyminh2005/" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="mailto:nguyenduyminhnt2503@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Họ và tên</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Chủ đề</label>
+                        <input type="text" name="subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Tin nhắn</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Gửi tin nhắn
+                    </button>
+                </form>
+            </div>
+            
+            <div class="cv-download">
+                <button class="btn btn-outline btn-lg" onclick="downloadCV()">
+                    <i class="fas fa-download"></i>
+                    Tải CV của tôi
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Nguyễn Duy Minh. </p>
+        </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast-text">
+                <div class="toast-title">Thành công!</div>
+                <div class="toast-message">Tin nhắn của bạn đã được gửi.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
